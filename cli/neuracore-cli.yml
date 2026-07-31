@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NeuracoreAI/neuracore/blob/main/docs/commandline.md
+cli:
+  name: neuracore
+  binary: neuracore
+  entry_point: neuracore.core.cli.app:main
+  package: packages/neuracore-packages.yml
+  install:
+  - pip install neuracore
+  - pip install "neuracore[ml]"   # required for training commands
+  config_file: ~/.neuracore/config.json
+  backend_override_env: NEURACORE_API_URL
+  command_groups:
+  - group: auth
+    commands:
+    - command: neuracore login
+      description: >-
+        Authenticate and save the API key to ~/.neuracore/config.json.
+        Interactive, or non-interactive with --email / --password.
+    - command: neuracore select-org
+      description: >-
+        Set the active organization (--org-name or --org-id). Required before
+        running training commands.
+  - group: training
+    commands:
+    - command: neuracore training list
+      description: List recent training runs (--cloud, --local, --all, --status, --limit, --root).
+    - command: neuracore training inspect
+      description: Show details for a run (--training-name, --config, --json).
+    - command: neuracore training monitor
+      description: Launch TensorBoard for a local run (requires neuracore[ml]).
+    - command: neuracore training delete
+      description: Remove a training run (--training-name, --yes).
+    - command: neuracore training start
+      description: Placeholder; use the Python SDK to launch jobs.
+  - group: server
+    commands:
+    - command: neuracore launch-server
+      description: >-
+        Start a local policy server for inference validation
+        (--input_embodiment_description, --output_embodiment_description,
+        --job_id, --org_id, --host, --port).

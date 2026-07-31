@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/neuracore/
+packages:
+- language: python
+  registry: pypi
+  name: neuracore
+  url: https://pypi.org/project/neuracore/
+  install: pip install neuracore
+  version: 13.4.0
+  license: MIT
+  official: true
+  description: >-
+    Official Neuracore client library — data collection and visualization, model
+    training, deployment and real-time inference for robot learning. Ships the
+    `neuracore` CLI entry point. Optional extras: [ml], [import], [examples],
+    [mjcf].
+  repository: https://github.com/NeuracoreAI/neuracore
+- language: python
+  registry: pypi
+  name: neuracore_types
+  url: https://pypi.org/project/neuracore-types/
+  install: pip install neuracore_types
+  license: MIT
+  official: true
+  description: >-
+    Core data structures shared across the Neuracore platform and SDK.
+  repository: https://github.com/NeuracoreAI/neuracore_types

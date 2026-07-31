@@ -1,0 +1,51 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NeuracoreAI/neuracore/blob/main/docs/environment_variable.md
+note: >-
+  Cross-cutting request/response semantics for the Neuracore Platform API,
+  captured from the SDK/CLI documentation and source. No public OpenAPI document
+  is published, so response-envelope and pagination specifics are limited to what
+  the SDK exposes.
+conventions:
+  base_url: https://api.neuracore.com/api
+  environments:
+  - name: production
+    base_url: https://api.neuracore.com/api
+  - name: staging
+    base_url: https://staging.api.neuracore.com/api
+  - name: local
+    base_url: http://localhost
+  authentication:
+    style: api-key
+    key_prefix: nrc_
+    env: NEURACORE_API_KEY
+    see: authentication/neuracore-authentication.yml
+  org_scoping:
+    env: NEURACORE_ORG_ID
+    format: uuid
+    note: Requests are scoped to an organization selected via `neuracore select-org`.
+  versioning:
+    scheme: path-prefix
+    prefix: /api
+    note: No explicit version segment; backend URL overridable via NEURACORE_API_URL.
+  retries:
+    client_side: true
+    max_input_attempts: 3
+    backoff_seconds: [0.05, 5]
+    note: SDK-level retry/backoff for streaming; not a server idempotency contract.
+  idempotency:
+    documented: false
+    note: No provider-documented idempotency-key header was found.
+  streaming:
+    max_concurrent_streams: 1000
+    transport: [webrtc/aiortc, sse, zmq]
+    note: 14 first-class data modalities logged via `nc.log_*` calls.
+  local_inference_server:
+    endpoints:
+    - path: /ping
+      purpose: health check
+    - path: /predict
+      purpose: policy inference
+    - path: /set_checkpoint
+      purpose: load model checkpoint
+    note: Endpoints of the locally launched policy server (neuracore launch-server).

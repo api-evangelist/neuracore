@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NeuracoreAI/neuracore/releases
+versioning:
+  scheme: semver
+  current: 13.4.0
+  mechanism: bumpversion
+  applies_to: neuracore Python SDK / client library
+  api_path_prefix: /api
+  docs: https://github.com/NeuracoreAI/neuracore/blob/main/docs/environment_variable.md
+deprecation:
+  policy_url: null
+  note: No public deprecation/Sunset-header policy found.
+sla:
+  url: null
+  note: SLAs offered on the Enterprise plan (priority support with SLAs) per https://neuracore.com/pricing; no public SLA document.
+status_page: null
+release_cadence:
+  observed: roughly weekly-to-monthly SDK releases (see changelog)

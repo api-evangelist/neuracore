@@ -1,7 +1,28 @@
 aid: neuracore
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/neuracore.png
 name: Neuracore
-description: Neuracore is a company surfaced as a portfolio company of earlybird and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Neuracore is an end-to-end cloud platform for robot skill creation. Teams use
+  it to collect teleoperation demonstrations, curate and version datasets, train
+  imitation-learning and reinforcement-learning policies, and deploy them to
+  production robots for real-time inference. The platform is driven by an
+  official Python SDK and command-line interface (pip install neuracore) that
+  stream 14 first-class data modalities to the Neuracore cloud backend at
+  api.neuracore.com, plus a Rust data daemon for high-throughput recording.
+  Founded by Stephen James and backed by Earlybird, Neuracore is used by robotics
+  teams including Anvil Robotics, AIRA, Flexiv and Scale AI.
 url: https://raw.githubusercontent.com/api-evangelist/neuracore/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,78 @@ x-backed-by:
 - earlybird
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Robotics
+- Robot Learning
+- Machine Learning
+- Imitation Learning
+- Reinforcement Learning
+- Teleoperation
+- Artificial Intelligence
+- SDK
+- Python
+apis:
+- name: Neuracore Platform API
+  description: >-
+    REST backend for the Neuracore robot-learning platform, consumed by the
+    official Neuracore Python SDK and CLI. Handles authentication, organizations,
+    datasets, training runs and policy inference. Authenticated with a
+    Neuracore API key (nrc_ prefix) or an interactive login.
+  humanURL: https://github.com/NeuracoreAI/neuracore
+  baseURL: https://api.neuracore.com/api
+  tags:
+  - Robotics
+  - Robot Learning
+  - Machine Learning
+  properties:
+  - type: Authentication
+    url: authentication/neuracore-authentication.yml
+  - type: Conventions
+    url: conventions/neuracore-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/neuracore-domain-security.yml
+- type: Website
+  url: https://neuracore.com
+- type: Documentation
+  url: https://github.com/NeuracoreAI/neuracore/tree/main/docs
+- type: GettingStarted
+  url: https://github.com/NeuracoreAI/neuracore/blob/main/docs/tutorial.md
+- type: GitHubOrganization
+  url: https://github.com/NeuracoreAI
+- type: Pricing
+  url: https://neuracore.com/pricing
+- type: SignUp
+  url: https://neuracore.com/auth/register
+- type: TermsOfService
+  url: https://neuracore.com/terms
+- type: Packages
+  url: packages/neuracore-packages.yml
+- type: SDKs
+  url: packages/neuracore-packages.yml
+- type: CLI
+  url: cli/neuracore-cli.yml
+- type: Authentication
+  url: authentication/neuracore-authentication.yml
+- type: Conventions
+  url: conventions/neuracore-conventions.yml
+- type: LLMsTxt
+  url: llms/neuracore-llms.txt
+- type: Lifecycle
+  url: lifecycle/neuracore-lifecycle.yml
+- type: ChangeLog
+  url: changelog/neuracore-changelog.yml

@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NeuracoreAI/neuracore/releases
+scheme: semver
+current_version: 13.4.0
+component: neuracore Python SDK / client library
+note: >-
+  Neuracore versions the platform through its official SDK GitHub releases;
+  release notes are published per tag. Recent window only.
+entries:
+- version: 13.4.0
+  date: '2026-07-13'
+- version: 13.3.0
+  date: '2026-06-23'
+- version: 13.2.0
+  date: '2026-06-19'
+- version: 13.1.0
+  date: '2026-06-15'
+- version: 13.0.0
+  date: '2026-06-15'
+  breaking: true
+  note: Major version bump.
+- version: 12.2.2
+  date: '2026-06-12'
+- version: 12.2.1
+  date: '2026-06-05'
+- version: 12.2.0
+  date: '2026-06-05'

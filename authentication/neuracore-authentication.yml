@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/NeuracoreAI/neuracore/blob/main/docs/environment_variable.md
+docs: https://github.com/NeuracoreAI/neuracore/blob/main/docs/commandline.md
+summary:
+  types: [apiKey, oauth2]
+  api_key_in: [header, env]
+  api_key_prefix: nrc_
+  notes: >-
+    No public OpenAPI document is published; the authentication model is captured
+    from the SDK/CLI documentation and source (requests-oauthlib login flow +
+    API-key header auth against api.neuracore.com/api).
+schemes:
+- name: NeuracoreApiKey
+  type: apiKey
+  key_prefix: nrc_
+  env: NEURACORE_API_KEY
+  obtain: >-
+    Run `neuracore login` (interactive or --email/--password) which authenticates
+    and stores an API key at ~/.neuracore/config.json, or set NEURACORE_API_KEY.
+  sources: [docs/environment_variable.md, neuracore/core/cli/generate_api_key.py]
+- name: NeuracoreLogin
+  type: oauth2
+  detail: >-
+    Interactive account login backed by requests-oauthlib; exchanges account
+    credentials for a session/API key used by the SDK and CLI.
+  sources: [neuracore/core/auth.py]
+org_context:
+  env: NEURACORE_ORG_ID
+  format: uuid
+  note: >-
+    Requests are scoped to an organization; select with `neuracore select-org`
+    or set NEURACORE_ORG_ID.
