@@ -53,7 +53,7 @@ tags:
 - Company
 - Robotics
 - Robot Learning
-- Machine-Learning
+- Machine Learning
 - Imitation Learning
 - Reinforcement Learning
 - Teleoperation
@@ -71,6 +71,7 @@ tags_raw:
 - Artificial Intelligence
 - SDK
 - Python
+- Machine-Learning
 apis:
 - name: Neuracore Platform API
   description: >-
@@ -83,11 +84,12 @@ apis:
   tags:
   - Robotics
   - Robot Learning
-  - Machine-Learning
+  - Machine Learning
   tags_raw:
   - Robotics
   - Robot Learning
   - Machine Learning
+  - Machine-Learning
   properties:
   - type: Authentication
     url: authentication/neuracore-authentication.yml
