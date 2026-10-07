@@ -1,0 +1,34 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.neuracore.com/pricing
+sources:
+- https://www.neuracore.com/pricing
+- https://neuracore.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Try the platform for free with your own teleop rig, or run Enterprise on our cloud or entirely
+    inside your own infrastructure.
+published: false
+note: No numeric prices; free community tier plus enterprise cloud-hosted or privately-hosted (on-prem)
+  options quoted via contact.
+plan_count: 2
+plans:
+- name: Cloud-hosted Free / Community
+  price_text: Start free.
+  period: none
+  included_quota: Bring your existing teleoperation setup; collect, curate, and version demonstrations;
+    train your first imitation learning policy; export dataset; community support
+- name: Cloud-hosted Enterprise
+  price_text: Contact Us
+  period: none
+  included_quota: 'Full platform access: collect, curate, train, deploy; SSO, roles, audit controls; priority
+    support and SLAs; dedicated deployment engineering'
