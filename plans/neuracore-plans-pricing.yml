@@ -32,3 +32,23 @@ plans:
   period: none
   included_quota: 'Full platform access: collect, curate, train, deploy; SSO, roles, audit controls; priority
     support and SLAs; dedicated deployment engineering'
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Cloud-hosted Free / Community
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Cloud-hosted Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
