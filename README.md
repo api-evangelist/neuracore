@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Neuracore is a company surfaced as a portfolio company of earlybird and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Neuracore is an end-to-end cloud platform for robot skill creation. Teams use it to collect teleoperation demonstrations, curate and version datasets, train imitation-learning and reinforcement-learning policies, and deploy them to production robots for real-time inference. The platform is driven by an official Python SDK and command-line interface (pip install neuracore) that stream 14 first-class data modalities to the Neuracore cloud backend at api.neuracore.com, plus a Rust data daemon for high-throughput recording. Founded by Stephen James and backed by Earlybird, Neuracore is used by robotics teams including Anvil Robotics, AIRA, Flexiv and Scale AI.
 
-Backed by: earlybird
+**Areas:** Company · Robotics · Robot Learning · Machine Learning · Imitation Learning · Reinforcement Learning · Teleoperation · Artificial Intelligence · SDK · Python
+
+## Neuracore on APIs.io
+
+Everything profiled for Neuracore is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/neuracore/](https://apis.io/providers/neuracore/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Neuracore Platform API](https://apis.io/apis/neuracore/neuracore-platform-api/) — REST backend for the Neuracore robot-learning platform, consumed by the official Neuracore Python SDK and CLI. Handles authentication, organizations,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Neuracore Authentication](https://apis.io/security/neuracore/neuracore-authentication/)
+- [Neuracore Domain Security](https://apis.io/security/neuracore/neuracore-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Neuracore Plans Pricing](https://apis.io/plans/neuracore/neuracore-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://neuracore.com)
+- [Documentation](https://github.com/NeuracoreAI/neuracore/tree/main/docs)
+- [Getting started](https://github.com/NeuracoreAI/neuracore/blob/main/docs/tutorial.md)
+- [Pricing](https://neuracore.com/pricing)
+- [Sign up](https://neuracore.com/auth/register)
+- [Blog](https://www.neuracore.com/resources/articles)
+- [Terms of service](https://neuracore.com/terms)
+- [GitHub](https://github.com/NeuracoreAI)
+
+## API Evangelist rating
+
+**Kin Score 28.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 42.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/neuracore/](https://apis.io/providers/neuracore/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Neuracore: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/neuracore/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
